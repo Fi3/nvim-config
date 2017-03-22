@@ -14,3 +14,5 @@ set showmatch
 " highlight in markdown
 autocmd BufNewFile,BufRead *.md set spell | set lbr | set nonu
 let g:markdown_fenced_languages = ['html', 'json', 'css', 'javascript', 'elm', 'vim']
+" folding
+set foldmethod=indent
