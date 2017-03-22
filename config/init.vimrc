@@ -1,0 +1,13 @@
+" Plugins
+call plug#begin()
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-fugitive'
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-vividchalk'
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/syntastic'
+Plug 'sheerun/vim-polyglot'
+Plug 'elmcast/elm-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'jszakmeister/vim-togglecursor'
+call plug#end()
