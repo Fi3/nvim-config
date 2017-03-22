@@ -2,7 +2,7 @@
 
 ```
 cd ~/.config
-git clone https://github.com/Fi3/nvim-config.git
+git clone https://github.com/Fi3/nvim-config.git nvim
 ```
 
-Open Nvim and then: `PlugInstall`
+Open Nvim and then: `:PlugInstall`
