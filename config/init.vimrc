@@ -10,4 +10,5 @@ Plug 'sheerun/vim-polyglot'
 Plug 'elmcast/elm-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'jszakmeister/vim-togglecursor'
+Plug 'flowtype/vim-flow'
 call plug#end()
