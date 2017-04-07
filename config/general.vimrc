@@ -16,3 +16,6 @@ autocmd BufNewFile,BufRead *.md set spell | set lbr | set nonu
 let g:markdown_fenced_languages = ['html', 'json', 'css', 'javascript', 'elm', 'vim']
 " folding
 set foldmethod=indent
+" If .js or .html expandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab
