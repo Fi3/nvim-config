@@ -1,9 +1,6 @@
 " Gruvbox TODO do not work for js and do not match []{}()
 set background=dark
-colorscheme gruvbox 
-" If .js  or .tag enable vividchalk
-autocmd Filetype javascript set background=light
-autocmd Filetype javascript colorscheme vividchalk 
+colorscheme gruvbox
 
 " Airline
 let g:airline_left_sep= '░'
