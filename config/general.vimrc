@@ -19,3 +19,5 @@ set foldmethod=indent
 " If .js or .html expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
+" Add ** to path for recursive fuzzy search in subdirectory
+set path+=**
