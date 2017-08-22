@@ -13,4 +13,5 @@ Plug 'scrooloose/nerdtree'
 Plug 'jszakmeister/vim-togglecursor'
 Plug 'flowtype/vim-flow'
 Plug 'vim-scripts/paredit.vim'
+Plug 'tpope/vim-surround'
 call plug#end()
