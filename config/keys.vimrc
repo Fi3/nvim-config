@@ -4,6 +4,6 @@
 imap jk <ESC>
 
 " clean the screnn with l (^l is used to change desktop)
-map l <C-l> 
+map ; <C-l> 
 
 map , :NERDTreeFind<return> 
