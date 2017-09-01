@@ -14,4 +14,5 @@ Plug 'jszakmeister/vim-togglecursor'
 Plug 'flowtype/vim-flow'
 Plug 'vim-scripts/paredit.vim'
 Plug 'tpope/vim-surround'
+Plug 'breuckelen/vim-resize'
 call plug#end()
