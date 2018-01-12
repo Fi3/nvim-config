@@ -16,8 +16,9 @@ autocmd BufNewFile,BufRead *.md set spell | set lbr | set nonu
 let g:markdown_fenced_languages = ['html', 'json', 'css', 'javascript', 'elm', 'vim']
 " folding
 set foldmethod=indent
-" If .js or .html expandtab
+" If .js or .html  or .hs expandtab
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype haskell setlocal ts=2 sw=2 expandtab
 " Add ** to path for recursive fuzzy search in subdirectory
 set path+=**
