@@ -22,3 +22,5 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype haskell setlocal ts=2 sw=2 expandtab
 " Add ** to path for recursive fuzzy search in subdirectory
 set path+=**
+" this need ripgrep installed on the system to work (cargo install ripgrep)
+command! -bang -nargs=* Find call fzf#vim#grep( 'rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --color "always" '.shellescape(<q-args>), 1, <bang>0)

@@ -16,4 +16,7 @@ Plug 'flowtype/vim-flow'
 Plug 'vim-scripts/paredit.vim'
 Plug 'tpope/vim-surround'
 Plug 'breuckelen/vim-resize'
+Plug 'parsonsmatt/intero-neovim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
