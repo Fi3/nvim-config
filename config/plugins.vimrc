@@ -13,6 +13,13 @@ let g:NERDTreeMinimalUI = 1
 autocmd VimEnter * if (0 == argc()) | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" NetRw
+let g:netrw_liststyle = 3      " treestyle visualization
+let g:netrw_browse_split = 4   " open file to next wind on the right
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
+let g:netrw_banner = 0
+
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
