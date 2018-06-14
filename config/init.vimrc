@@ -19,4 +19,5 @@ Plug 'breuckelen/vim-resize'
 Plug 'parsonsmatt/intero-neovim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'neomake/neomake'
 call plug#end()
