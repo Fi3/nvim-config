@@ -22,3 +22,5 @@ autocmd Filetype html setlocal ts=2 sw=2 expandtab
 autocmd Filetype haskell setlocal ts=2 sw=2 expandtab
 " save file with sudo when opened without sudo
 command Wsudo :execute ':silent w !sudo tee % > /dev/null' | :edit!
+" visualize 80 char max length
+set colorcolumn=80
