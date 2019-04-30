@@ -1,6 +1,6 @@
 " Gruvbox TODO do not work for js and do not match []{}()
-set background=dark
-colorscheme gruvbox
+" set background=dark
+colorscheme synthwave
 
 " Airline
 let g:airline_left_sep= '░'

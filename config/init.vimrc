@@ -21,4 +21,5 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
 Plug 'reasonml-editor/vim-reason-plus'
+Plug 'TroyFletcher/vim-colors-synthwave'
 call plug#end()
