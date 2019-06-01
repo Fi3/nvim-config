@@ -24,3 +24,5 @@ autocmd Filetype haskell setlocal ts=2 sw=2 expandtab
 command Wsudo :execute ':silent w !sudo tee % > /dev/null' | :edit!
 " visualize 80 char max length
 set colorcolumn=80
+" persist undo
+set undofile
