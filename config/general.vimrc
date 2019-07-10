@@ -26,3 +26,6 @@ command Wsudo :execute ':silent w !sudo tee % > /dev/null' | :edit!
 set colorcolumn=80
 " persist undo
 set undofile
+
+" Faster omnicompletion
+imap <C-o> <C-x><C-o>

@@ -90,3 +90,36 @@ augroup END
 
 " Intero starts automatically. Set this if you'd like to prevent that.
 let g:intero_start_immediately = 0
+
+" rust-racer setup
+set hidden
+let g:racer_cmd = "/home/user/.cargo/bin/racer"
+
+" rust-racer show complete function definition
+let g:racer_experimental_completer = 1
+let g:racer_insert_paren = 1
+
+" rust-racer mappings
+au FileType rust nmap gx <Plug>(rust-def-vertical)
+au FileType rust nmap gd <Plug>(rust-doc)
+
+" toogle tagbar with F8
+nmap <F8> :TagbarToggle<CR>
+
+" rust tagbar configuration
+let g:tagbar_type_rust = {
+   \ 'ctagstype' : 'rust',
+   \ 'kinds' : [
+       \'T:types,type definitions',
+       \'f:functions,function definitions',
+       \'g:enum,enumeration names',
+       \'s:structure names',
+       \'m:modules,module names',
+       \'c:consts,static constants',
+       \'t:traits',
+       \'i:impls,trait implementations',
+   \]
+   \}
+
+" vim-rust copy RustFmt link to clipboard
+let g:rust_clip_command = 'xclip -selection clipboard'
