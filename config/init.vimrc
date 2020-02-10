@@ -27,4 +27,5 @@ Plug 'rust-lang/rustfmt'
 Plug 'racer-rust/vim-racer'
 Plug 'majutsushi/tagbar'
 Plug 'mattn/webapi-vim'
+Plug 'kenwheeler/glow-in-the-dark-gucci-shark-bites-vim'
 call plug#end()
