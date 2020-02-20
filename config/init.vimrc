@@ -23,9 +23,7 @@ Plug 'neomake/neomake'
 Plug 'reasonml-editor/vim-reason-plus'
 Plug 'TroyFletcher/vim-colors-synthwave'
 Plug 'rust-lang/rust.vim'
-Plug 'rust-lang/rustfmt'
-Plug 'racer-rust/vim-racer'
-Plug 'majutsushi/tagbar'
-Plug 'mattn/webapi-vim'
 Plug 'kenwheeler/glow-in-the-dark-gucci-shark-bites-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'majutsushi/tagbar'
 call plug#end()
