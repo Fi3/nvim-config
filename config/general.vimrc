@@ -28,3 +28,5 @@ set colorcolumn=100
 set undofile
 " Faster omnicompletion
 imap <C-o> <C-x><C-o>
+" Mouse events
+set mouse=a
