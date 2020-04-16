@@ -16,7 +16,6 @@ Plug 'flowtype/vim-flow'
 Plug 'vim-scripts/paredit.vim'
 Plug 'tpope/vim-surround'
 Plug 'breuckelen/vim-resize'
-Plug 'parsonsmatt/intero-neovim'
 Plug 'neomake/neomake'
 Plug 'reasonml-editor/vim-reason-plus'
 Plug 'TroyFletcher/vim-colors-synthwave'
@@ -24,4 +23,6 @@ Plug 'rust-lang/rust.vim'
 Plug 'kenwheeler/glow-in-the-dark-gucci-shark-bites-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'majutsushi/tagbar'
+" better syntax highlight for haskell and cabal
+Plug 'neovimhaskell/haskell-vim'
 call plug#end()
