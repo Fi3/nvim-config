@@ -17,8 +17,6 @@ Plug 'vim-scripts/paredit.vim'
 Plug 'tpope/vim-surround'
 Plug 'breuckelen/vim-resize'
 Plug 'parsonsmatt/intero-neovim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'neomake/neomake'
 Plug 'reasonml-editor/vim-reason-plus'
 Plug 'TroyFletcher/vim-colors-synthwave'
