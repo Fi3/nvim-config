@@ -26,3 +26,4 @@ When a component is broken on nightly [this](https://github.com/rust-lang/rls#er
 
 * https://github.com/Infinisil/all-hies  `cachix use all-hies && nix-env -iA selection --arg selector 'p: { inherit (p) ghc864 ghc863 ghc843; }' -f https://github.com/infinisil/all-hies /tarball/master` this will install for ghc 8.6.4 8.6.3 and 8.4.3
 * update cabal: cabal install Cabal cabal-install
+* use ghcup to manage ghc versions https://github.com/haskell/ghcup-hs
