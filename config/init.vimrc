@@ -1,28 +1,34 @@
 " Plugins
 call plug#begin()
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-fireplace'
+" Colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-vividchalk'
-Plug 'vim-airline/vim-airline'
-Plug 'scrooloose/syntastic'
-" elmcast must load before wim-polyglot https://github.com/ElmCast/elm-vim/issues/133
-Plug 'elmcast/elm-vim'
-Plug 'sheerun/vim-polyglot'
-Plug 'scrooloose/nerdtree'
-Plug 'jszakmeister/vim-togglecursor'
-Plug 'flowtype/vim-flow'
-Plug 'vim-scripts/paredit.vim'
-Plug 'tpope/vim-surround'
-Plug 'breuckelen/vim-resize'
-Plug 'neomake/neomake'
-Plug 'reasonml-editor/vim-reason-plus'
 Plug 'TroyFletcher/vim-colors-synthwave'
-Plug 'rust-lang/rust.vim'
 Plug 'kenwheeler/glow-in-the-dark-gucci-shark-bites-vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'majutsushi/tagbar'
-" better syntax highlight for haskell and cabal
-Plug 'neovimhaskell/haskell-vim'
+Plug 'sainnhe/edge'
+" Vim defaults
+Plug 'tpope/vim-sensible'
+" Resize screen using arrow keys
+Plug 'breuckelen/vim-resize'
+" Git support
+Plug 'tpope/vim-fugitive'
+" Clojure support TODO check if still needed after LSP
+Plug 'tpope/vim-fireplace'
+Plug 'vim-scripts/paredit.vim'
+" Syntax highlight for several languages
+Plug 'sheerun/vim-polyglot'
+" Status bar
+Plug 'itchyny/lightline.vim'
+" Nerdtree
+Plug 'scrooloose/nerdtree'
+" Collection of common configurations for the Nvim LSP client
+Plug 'neovim/nvim-lspconfig'
+" Extensions to built-in LSP, for example, providing type inlay hints
+Plug 'tjdevries/lsp_extensions.nvim'
+" Autocompletion framework for built-in LSP
+Plug 'nvim-lua/completion-nvim'
+" Diagnostic navigation and settings for built-in LSP
+Plug 'nvim-lua/diagnostic-nvim'
+" Syntastic only for js
+Plug 'scrooloose/syntastic'
 call plug#end()
