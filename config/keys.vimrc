@@ -2,6 +2,8 @@
 
 " map jk to <ESC> fucking new mac
 imap jk <ESC>
+imap DD {:#?}
+imap DDD println!("{:#?}", 
 
 " clean the screnn with l (^l is used to change desktop)
 map ; <C-l> 

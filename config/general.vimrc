@@ -1,3 +1,4 @@
+set number
 " Set no tabs
 set tabstop=2 expandtab
 
