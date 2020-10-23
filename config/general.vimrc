@@ -2,9 +2,9 @@
 set tabstop=2 expandtab
 
 " split windows no bar
-set fillchars+=vert:\
+"set fillchars+=vert:|
 "set fillchars+=vert:\
-"set fillchars+=vert:*
+set fillchars+=vert:*
 
 let mapleader=" "
 set number
