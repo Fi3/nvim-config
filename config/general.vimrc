@@ -7,7 +7,9 @@ set tabstop=2 expandtab
 "set fillchars+=vert:\
 set fillchars+=vert:*
 
-let mapleader=" "
+" use map instead of let for mapping the leader (now also \ is the leader)
+" https://www.reddit.com/r/vim/comments/1vdrxg/space_is_a_big_key_what_do_you_map_it_to/
+map <space> <leader>
 set number
 set noswapfile
 
@@ -39,3 +41,19 @@ set mouse=a
 " Enable syntax highlighting and file type identification, plugin and indenting
 syntax enable
 filetype plugin indent on
+
+" Copy to clipboard
+" To copy on system clipoard on linx nee xclip installed `sudo dnf install xclip`
+" If no xclip installed but on a tmux session will copy on the tmux buffer
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+
+" Paste from clipboard
+" To paste on system clipoard on linx nee xclip installed `sudo dnf install xclip`
+" If no xclip installed but on a tmux session will paste on the tmux buffer
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
