@@ -36,19 +36,28 @@ nvim_lsp.pyls.setup{}
 -- nvim_lsp.flow.setup{}
 
 -- Elm via elmls https://github.com/elm-tooling/elm-language-server#installation
+-- install with :LspInstall elmls
 nvim_lsp.elmls.setup{}
 
 -- HTML via html https://github.com/vscode-langservers/vscode-html-languageserver-bin
 nvim_lsp.html.setup{}
 
 -- Clojure via clojure_lsp https://github.com/snoe/clojure-lsp
+-- just put latest binary in path https://github.com/snoe/clojure-lsp/releases/tag/release-20201009T224414
 nvim_lsp.clojure_lsp.setup{}
 
+
 -- SQL via sqlls https://github.com/joe-re/sql-language-server
+-- install with :LspInstall sqlls
 nvim_lsp.sqlls.setup{}
 
 -- CSS via cssls https://github.com/vscode-langservers/vscode-css-languageserver-bin
 nvim_lsp.cssls.setup{}
+
+-- C++ via clangd https://clangd.llvm.org/installation.html
+-- for non cmake project bear need to be in the path: https://github.com/rizsotto/Bear
+-- build projects with bear [build command] in order to enable the language server
+nvim_lsp.clangd.setup{}
 
 EOF
 
