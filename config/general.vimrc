@@ -32,6 +32,9 @@ command Wsudo :execute ':silent w !sudo tee % > /dev/null' | :edit!
 " Visualize 100 char max length
 set colorcolumn=100
 
+" New line after 100 char
+set textwidth=100
+
 " Persist undo
 set undofile
 
