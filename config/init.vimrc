@@ -31,4 +31,6 @@ Plug 'nvim-lua/completion-nvim'
 Plug 'nvim-lua/diagnostic-nvim'
 " Syntastic only for js
 Plug 'scrooloose/syntastic'
+" Check english grammar
+Plug 'rhysd/vim-grammarous'
 call plug#end()
