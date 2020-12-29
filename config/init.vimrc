@@ -16,7 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-fireplace'
 Plug 'vim-scripts/paredit.vim'
 " Syntax highlight for several languages
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 " Status bar
 Plug 'itchyny/lightline.vim'
 " Nerdtree
@@ -28,9 +28,12 @@ Plug 'tjdevries/lsp_extensions.nvim'
 " Autocompletion framework for built-in LSP
 Plug 'nvim-lua/completion-nvim'
 " Diagnostic navigation and settings for built-in LSP
-Plug 'nvim-lua/diagnostic-nvim'
+" Plug 'nvim-lua/diagnostic-nvim'
 " Syntastic only for js
 Plug 'scrooloose/syntastic'
 " Check english grammar
 Plug 'rhysd/vim-grammarous'
+" MarkDown support
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 call plug#end()

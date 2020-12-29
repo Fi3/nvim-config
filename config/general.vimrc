@@ -34,6 +34,10 @@ set colorcolumn=100
 
 " New line after 100 char
 set textwidth=100
+" If file type is markdown do not count not rendered chars
+lua <<EOF
+-- TODO
+EOF
 
 " Persist undo
 set undofile
