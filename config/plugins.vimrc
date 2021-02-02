@@ -47,9 +47,6 @@ let g:netrw_altv = 1
 let g:netrw_winsize = 15
 let g:netrw_banner = 0
 
-"" rust.vim automatically format rust code on save
-let g:rustfmt_autosave = 1
-
 " Syntastic
 " Only active for js files
 let g:syntastic_mode_map = {

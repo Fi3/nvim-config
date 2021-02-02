@@ -12,9 +12,9 @@ Plug 'tpope/vim-sensible'
 Plug 'breuckelen/vim-resize'
 " Git support
 Plug 'tpope/vim-fugitive'
+Plug 'TimUntersberger/neogit'
 " Clojure support TODO check if still needed after LSP
 Plug 'tpope/vim-fireplace'
-Plug 'vim-scripts/paredit.vim'
 " Syntax highlight for several languages
 " Plug 'sheerun/vim-polyglot'
 " Status bar
