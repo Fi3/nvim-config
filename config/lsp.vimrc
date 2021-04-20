@@ -22,8 +22,22 @@ local nvim_lsp = require'lspconfig'
 
 nvim_lsp.sumneko_lua.setup{}
 
+-- function to attach completion when setting up lsp
+local on_attach = function(client)
+    require'completion'.on_attach(client)
+end
+
 -- Rust via rust analyzer https://github.com/rust-analyzer/rust-analyzer
-nvim_lsp.rust_analyzer.setup{}
+nvim_lsp.rust_analyzer.setup({ on_attach=on_attach })
+
+-- Enable diagnostics
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+    virtual_text = true,
+    signs = true,
+    update_in_insert = true,
+  }
+)
 
 -- Python via pyls https://github.com/palantir/python-language-server
 nvim_lsp.pyls.setup{}
@@ -83,6 +97,10 @@ autocmd CursorHold * lua vim.lsp.diagnostic.show_line_diagnostics()
 " Goto previous/next diagnostic warning/error
 nnoremap <silent> g[ <cmd>lua vim.lsp.diagnostic.goto_prev { wrap = false }<cr>
 nnoremap <silent> g] <cmd>lua vim.lsp.diagnostic.goto_next { wrap = false }<cr>
+
+" have a fixed column for the diagnostics to appear in
+" this removes the jitter when warnings/errors flow in
+set signcolumn=yes
 
 " Enable type inlay hints
 autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *

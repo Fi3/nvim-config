@@ -4,6 +4,7 @@
 imap jk <ESC>
 imap DD {:#?}
 imap DDD println!("{:#?}", 
+imap WW .map_err(\|_\| ())?; 
 
 " clean the screnn with l (^l is used to change desktop)
 map ; <C-l> 
