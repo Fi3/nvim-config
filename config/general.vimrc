@@ -64,3 +64,6 @@ nnoremap <leader>p "+p
 nnoremap <leader>P "+P
 vnoremap <leader>p "+p
 vnoremap <leader>P "+P
+
+" Save also with W
+command! -bang -range=% -complete=file -nargs=* W <line1>,<line2>write<bang> <args>
