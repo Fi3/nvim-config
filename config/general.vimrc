@@ -67,3 +67,6 @@ vnoremap <leader>P "+P
 
 " Save also with W
 command! -bang -range=% -complete=file -nargs=* W <line1>,<line2>write<bang> <args>
+
+" yank entire line with Y
+map Y yy
