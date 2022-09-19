@@ -2,6 +2,9 @@ set number
 " Set no tabs
 set tabstop=2 expandtab
 
+" Set indent to 4
+set shiftwidth=4
+
 " split windows no bar
 "set fillchars+=vert:|
 "set fillchars+=vert:\
