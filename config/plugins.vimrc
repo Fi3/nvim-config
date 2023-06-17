@@ -167,3 +167,6 @@ lua <<EOF
     capabilities = capabilities
   }
 EOF
+
+" Map Codeium accept to ctrl c
+imap <script><silent><nowait><expr> <C-g> codeium#Accept()

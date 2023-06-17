@@ -27,3 +27,7 @@ When an haskell project is create a file named `hie.yaml` must be put in the roo
 https://github.com/mpickering/hie-bios/blob/master/README.md
 https://github.com/haskell/haskell-ide-engine/issues/1621#issuecomment-581067134
 `lib:<project-name>` ok `exe:<project-name>`
+
+## Codeium config
+Run `:Codeium Auth` to set up the plugin and start using Codeium.
+

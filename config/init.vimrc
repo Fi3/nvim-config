@@ -45,4 +45,7 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 " Rust
 Plug 'simrat39/rust-tools.nvim'
+" AI completion tool
+Plug 'Exafunction/codeium.vim'
 call plug#end()
+
