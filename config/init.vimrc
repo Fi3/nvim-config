@@ -47,5 +47,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'simrat39/rust-tools.nvim'
 " AI completion tool
 Plug 'Exafunction/codeium.vim'
+" Nvim session manager
+Plug 'rmagatti/auto-session'
 call plug#end()
 
