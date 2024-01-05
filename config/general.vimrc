@@ -73,3 +73,6 @@ command! -bang -range=% -complete=file -nargs=* W <line1>,<line2>write<bang> <ar
 
 " yank entire line with Y
 map Y yy
+
+" highlight Tiltfile as pyhton
+au BufRead,BufNewFile Tiltfile set filetype=python
