@@ -33,10 +33,14 @@ local opts = {
                 -- checkOnSave = {
                 --     command = "clippy"
                 -- },
+                cargo = {
+                    allFeatures = true,
+                    },
             }
         }
     },
 }
+
 require('rust-tools').setup(opts)
 
 -- Enable diagnostics
