@@ -37,8 +37,8 @@ let g:NERDTreeWinSize = 24
 let g:NERDTreeMinimalUI = 1
 autocmd VimEnter * if (0 == argc()) | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
+let g:NERDTreeQuitOnOpen = 1
 
 " NetRw
 let g:netrw_liststyle = 3      " treestyle visualization
