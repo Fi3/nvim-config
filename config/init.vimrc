@@ -47,5 +47,8 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'simrat39/rust-tools.nvim'
 " AI completion tool
 Plug 'Exafunction/codeium.vim'
+" Fzf search
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 

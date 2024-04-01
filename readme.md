@@ -31,3 +31,13 @@ https://github.com/haskell/haskell-ide-engine/issues/1621#issuecomment-581067134
 ## Codeium config
 Run `:Codeium Auth` to set up the plugin and start using Codeium.
 
+## Search
+Fuzzy search files ordered byt proximity with ctr p, need:
+
+### proximity-sort
+https://github.com/jonhoo/proximity-sort
+Install with  `cargo install proximity-sort`
+
+
+### fzf and fd
+pacman -S fzf fd
