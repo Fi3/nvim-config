@@ -41,3 +41,7 @@ Install with  `cargo install proximity-sort`
 
 ### fzf and fd
 pacman -S fzf fd
+
+
+### codex
+sudo npm install -g @openai/codex

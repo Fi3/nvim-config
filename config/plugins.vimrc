@@ -33,7 +33,7 @@ colorscheme edge
 
 " NerdTree
 map <LEADER>f :NERDTreeToggle<CR>
-let g:NERDTreeWinSize = 24
+let g:NERDTreeWinSize = 70
 let g:NERDTreeMinimalUI = 1
 autocmd VimEnter * if (0 == argc()) | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -167,6 +167,35 @@ lua <<EOF
     capabilities = capabilities
   }
 EOF
+
+" Codex.nvim configuration
+lua <<EOF
+local ok, codex = pcall(require, "codex")
+if not ok then
+  return
+end
+
+codex.setup({
+  keymaps = {
+    -- Disable the plugin's built-in <leader>cc mapping and only keep
+    -- the internal quit mapping; we'll define our own toggle mapping
+    toggle = nil,
+    quit = "<C-q>",
+  },
+  border      = "rounded",
+  width       = 0.8,
+  height      = 0.8,
+  model       = nil,      -- let Codex CLI choose or change later
+  autoinstall = true,     -- will try to install the CLI if missing
+  panel       = false,    -- floating window instead of side panel
+  use_buffer  = false,    -- terminal buffer, not normal buffer
+})
+EOF
+
+" Toggle Codex with <leader>cc in normal and terminal mode
+nnoremap <silent> <leader>cc :CodexToggle<CR>
+tnoremap <silent> <leader>cc <C-\><C-n>:CodexToggle<CR>
+
 
 " Map Codeium accept to ctrl c
 imap <script><silent><nowait><expr> <C-g> codeium#Accept()

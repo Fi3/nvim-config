@@ -50,5 +50,6 @@ Plug 'Exafunction/codeium.vim'
 " Fzf search
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'johnseth97/codex.nvim'
 call plug#end()
 
