@@ -1,3 +1,15 @@
+" CodeDiff
+lua <<EOF
+require("codediff").setup({
+  explorer = {
+    line_stats = {
+      enabled = true,
+      count_untracked = true,
+    },
+  },
+})
+EOF
+
 " COLORSCHEME edge
 if has('termguicolors')
   set termguicolors
